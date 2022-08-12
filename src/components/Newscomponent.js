@@ -34,9 +34,9 @@ function Newscomponent() {
   return (
     <>
     {loading && <Spinner/> }
-    <InfiniteScroll dataLength={articles.length} next={fetchMoreData} hasMore={articles.length < results}
+    {/* <InfiniteScroll dataLength={articles.length} next={fetchMoreData} hasMore={articles.length < results}
     loader={<Spinner/>}
->
+> */}
     <div className="container">
           <div className="row">
             {articles.map((element) => {
@@ -44,7 +44,8 @@ function Newscomponent() {
                 <div className="col-md-4 container" key={element.url}>
                   <Newsitem
                     title={element.title ? element.title : ""}
-                    description={element.description.length == 20 ? element.description : ""}
+                    // description={element.description.length == 20 ? element.description : ""}
+                    description = {element.description}
                     urlToImage={element.urlToImage? element.urlToImage : "https://www.google.com/url?sa=i&url=https%3A%2F%2Fouikar.com%2F441031616913073459402507.html&psig=AOvVaw0mM41SlwvDfFEphQhMTo8S&ust=1645014982859000&source=images&cd=vfe&ved=0CAsQjRxqFwoTCJjdp8HcgfYCFQAAAAAdAAAAABAO"}
                     url={element.url}
                     author={element.author}
@@ -56,7 +57,7 @@ function Newscomponent() {
             })}
           </div>
         </div>
-      </InfiniteScroll>
+      {/* </InfiniteScroll> */}
     </>
   )
 }

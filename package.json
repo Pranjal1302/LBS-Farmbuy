@@ -20,13 +20,8 @@
     "react-infinite-scroll-component": "^6.1.0",
     "react-router": "^6.2.1",
     "react-router-dom": "^6.2.1",
-    "react-scripts": "^5.0.0",
-<<<<<<< HEAD
-=======
+    "react-scripts": "^5.0.1",
     "react-stripe-checkout": "^2.6.3",
-    "stripe": "^8.203.0",
-    "uuid": "^8.3.2",
->>>>>>> 0c975f3dca20d70c43360285624a870d211271de
     "web-vitals": "^2.1.4"
   },
   "scripts": {

@@ -28,8 +28,8 @@ function Newsitem(props) {
               alt=""
             />
           </div>
-          <div className="card-body" style={{backgroundColor:"black"}}>
-            <h5 className="card-title text-light">{props.title}...</h5>
+          <div className="card-body" style={{backgroundColor:"white"}}>
+            <h5 className="card-title">{props.title}...</h5>
             <p className="card-text">{props.description}...</p>
             <p className="card-text">
               <small className="text-muted">
@@ -42,7 +42,7 @@ function Newsitem(props) {
                   href={props.url}
                   rel="noreferrer"
                   target={"_blank"}
-                  className="btn btn-light"
+                  className="btn btn-dark"
                 >
                   Read more
                 </a>

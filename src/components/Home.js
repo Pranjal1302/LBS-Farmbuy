@@ -24,14 +24,14 @@ function Home() {
                     <div className="carousel-item">
                         <img src="assets/carousel2.jpg" className="imgs  w-100" alt="c2" />
                         <div className="carousel-caption d-none d-md-block">
-                            <h1>Carousel 2</h1>
+                            <h1>Our Motive to help Farmers</h1>
                             <p>...</p>
                         </div>
                     </div>
                     <div className="carousel-item">
                         <img src="assets/carousel3.jpg" className="imgs d-block w-100" alt="c3" />
                         <div className="carousel-caption d-none d-md-block">
-                            <h1>Carousel 3</h1>
+                            <h1>Our Motive to help Farmers</h1>
                             <p>...</p>
                         </div>
                     </div>

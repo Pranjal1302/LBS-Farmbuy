@@ -11,9 +11,6 @@ function TokenPage() {
   
 
   return <>
-  
-   {/* { cont.login?<Login/>:( */}
-   (
     <div className="container-fluid tokenpage">
       <section id="minimal-statistics">
         <div className='heading'>
@@ -86,7 +83,7 @@ function TokenPage() {
 
 
       </section>
-    </div>)
+    </div>
 
   </>; 
 }
