@@ -10,7 +10,7 @@ export default function Navbar() {
   return (
     <div>
       
-      <nav className="navbar navbar-expand-lg navbar-dark d-flex justify-content-center bg-dark">
+      <nav className="navbar navbar-expand-lg navbar-dark d-flex justify-content-center bg-dark sticky-nav" sticky="top">
         <div className="container-fluid">
           <Link className="navbar-brand" to="/">
             FarmBuy
@@ -43,11 +43,11 @@ export default function Navbar() {
                   News
                 </Link>
               </li>
-              <li className="nav-item">
+              {/* <li className="nav-item">
                 <Link className="nav-link" to="/translate">
                   Translate
                 </Link>
-              </li>
+              </li> */}
               </ul>
             <Link to="login">
            <Button variant="contained">LOGIN</Button>

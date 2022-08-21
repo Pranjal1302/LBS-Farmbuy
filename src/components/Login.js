@@ -1,13 +1,8 @@
-import React, { useContext } from 'react';
-import { Link } from 'react-router-dom';
+import React from 'react';
 import "./login.css";
-import { myContext } from '../Context/MyContextFile.js';
 import { db } from "../firebase_config.js";
 
 function Login() {
-
-    const cont = useContext(myContext);
-
     const login = () => {
         // console.log("Hellooo")
         // cont.setLogin(true);
@@ -26,13 +21,13 @@ function Login() {
                     users.push(data.AadharCardNo);
                     console.log(data.AadharCardNo)
                     for (var i = 0; i <= users.length; i++) {
-                        if (email == data.AadharCardNo) {
+                        if (email === data.AadharCardNo) {
                             log = 1;
                         }
                     }
 
                 });
-                if (log == 1) {
+                if (log === 1) {
                     console.log("Login Success")
                 }
                 else {
@@ -50,7 +45,7 @@ function Login() {
                         <div className="row d-flex justify-content-center align-items-center h-100">
                             <div className="col-md-9 col-lg-6 col-xl-5">
                                 <img src="https://mdbcdn.b-cdn.net/img/Photos/new-templates/bootstrap-login-form/draw2.webp" className="img-fluid"
-                                    alt="Sample image" />
+                                    alt="not found" />
                             </div>
                             <div className="col-md-8 col-lg-6 col-xl-4 offset-xl-1">
                                 <form>
@@ -87,13 +82,7 @@ function Login() {
                             </div>
                         </div>
                     </div>
-                    <div className="d-flex flex-column flex-md-row text-center text-md-start justify-content-between py-4 px-4 px-xl-5 bg-primary">
-
-                        <div className="text-white mb-3 mb-md-0">
-                            Copyright © 2022. All rights reserved.
-                        </div>
-
-                    </div>
+                    
                 </section>
             </div>
 
